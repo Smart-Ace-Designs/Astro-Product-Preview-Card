@@ -1,10 +1,15 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
+import Image from "astro/components/Image.astro";
+
+import imageProduct from "@/assets/image-product-mobile.jpg";
 ---
 
 <MainLayout title="Frontend Mentor | Product Preview Card">
-  <div>
-    <img src="" alt="" />
+  <div
+    class="mx-auto mt-8 w-[360px] overflow-hidden rounded-lg bg-secondaryWhite"
+  >
+    <Image src={imageProduct} alt="Parfum" loading={"eager"} />
     <section>
       <p>Perfume</p>
       <h1>Gabrielle Essence Eau De Parfum</h1>
