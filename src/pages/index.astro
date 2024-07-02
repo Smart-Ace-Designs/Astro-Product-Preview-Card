@@ -2,15 +2,23 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import Image from "astro/components/Image.astro";
 
-import imageProduct from "@/assets/image-product-mobile.jpg";
+import imageMobile from "@/assets/image-product-mobile.jpg";
+import imageDesktop from "@/assets/image-product-desktop.jpg";
+
 import cart from "@/assets/icon-cart.svg";
 ---
 
 <MainLayout title="Frontend Mentor | Product Preview Card">
   <div
-    class="mx-auto mt-7 w-[360px] overflow-hidden rounded-lg bg-secondaryWhite"
+    class="mx-auto mt-7 w-[360px] overflow-hidden rounded-lg bg-secondaryWhite md:mt-20 md:grid md:w-[600px] md:grid-cols-2"
   >
-    <Image src={imageProduct} alt="Parfum" loading={"eager"} />
+    <Image src={imageMobile} alt="Parfum" loading={"eager"} class="md:hidden" />
+    <Image
+      src={imageDesktop}
+      alt="Parfum"
+      loading={"eager"}
+      class="hidden md:block md:h-full"
+    />
     <section class="px-8 py-6">
       <p
         class="mb-3 font-montserrat text-xs uppercase tracking-[.35rem] text-secondaryDarkGrayishBlue"
