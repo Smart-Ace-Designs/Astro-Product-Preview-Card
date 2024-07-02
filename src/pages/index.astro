@@ -3,25 +3,43 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import Image from "astro/components/Image.astro";
 
 import imageProduct from "@/assets/image-product-mobile.jpg";
+import cart from "@/assets/icon-cart.svg";
 ---
 
 <MainLayout title="Frontend Mentor | Product Preview Card">
   <div
-    class="mx-auto mt-8 w-[360px] overflow-hidden rounded-lg bg-secondaryWhite"
+    class="mx-auto mt-7 w-[360px] overflow-hidden rounded-lg bg-secondaryWhite"
   >
     <Image src={imageProduct} alt="Parfum" loading={"eager"} />
-    <section>
-      <p>Perfume</p>
-      <h1>Gabrielle Essence Eau De Parfum</h1>
-      <p>
+    <section class="px-8 py-6">
+      <p
+        class="mb-3 font-montserrat text-xs uppercase tracking-[.35rem] text-secondaryDarkGrayishBlue"
+      >
+        Perfume
+      </p>
+      <h1
+        class="mb-4 font-fraunces text-[2rem] font-semibold leading-none text-secondaryVeryDarkBlue"
+      >
+        Gabrielle Essence Eau De Parfum
+      </h1>
+      <p class="mb-7 text-sm text-secondaryDarkGrayishBlue">
         A floral, solar and voluptuous interpretation composed by Olivier Polge,
         Perfumer-Creator for the House of CHANEL.
       </p>
-      <p>$149.99</p>
-      <p>$169.99</p>
-      <div>
-        <img src="" alt="" />
-        <p>Add to Cart</p>
+      <div class="mb-5 flex items-center">
+        <p class="mr-4 font-fraunces text-3xl text-primaryDarkCyan">$149.99</p>
+        <p class="text-xs text-secondaryDarkGrayishBlue">$169.99</p>
+      </div>
+
+      <div
+        class="flex items-center justify-center rounded-md bg-primaryDarkCyan py-4"
+      >
+        <a href="/" class="font-montserrat text-sm text-secondaryWhite"
+          ><span
+            ><Image src={cart} alt="Shoping Cart" class="mr-2 inline" /></span
+          >
+          Add to Cart</a
+        >
       </div>
     </section>
   </div>
