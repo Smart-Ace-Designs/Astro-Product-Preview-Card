@@ -26,6 +26,7 @@ Users should be able to:
 - See hover and focus states for interactive elements
 
 ### Screenshot
+![product-preview-card](https://github.com/Smart-Ace-Designs/Astro-Product-Preview-Card/assets/132539186/60bc4cae-e620-4566-bede-c7e208d25697)
 
 ### Links
 
