@@ -49,18 +49,17 @@ import cart from "@/assets/icon-cart.svg";
       </div>
 
       <div
-        class="flex items-center justify-center rounded-md bg-primaryDarkCyan py-[13px] hover:cursor-pointer hover:bg-secondaryDarkGrayishBlue"
+        class="hover:bg-secondaryDarkCyan focus-within:bg-secondaryDarkCyan flex items-center justify-center rounded-md bg-primaryDarkCyan py-[13px] hover:cursor-pointer"
       >
-        <a href="/" class="block font-montserrat text-sm text-secondaryWhite"
-          ><span
-            ><Image
-              src={cart}
-              alt="Shoping Cart"
-              class="mr-2 inline"
-              loading="eager"
-            /></span
-          >
-          Add to Cart</a
+        <Image
+          src={cart}
+          alt="Shoping Cart"
+          class="mr-2 inline"
+          loading="eager"
+        />
+        <button
+          class="block font-montserrat text-sm text-secondaryWhite focus:outline-none"
+          type="submit"><span></span>Add to Cart</button
         >
       </div>
     </div>
