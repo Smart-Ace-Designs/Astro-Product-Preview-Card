@@ -4,64 +4,62 @@ import Image from "astro/components/Image.astro";
 
 import imageMobile from "@/assets/image-product-mobile.jpg";
 import imageDesktop from "@/assets/image-product-desktop.jpg";
-
-import cart from "@/assets/icon-cart.svg";
 ---
 
 <MainLayout title="Frontend Mentor | Product Preview Card">
-  <section
-    class="mx-auto my-8 w-[360px] overflow-hidden rounded-lg bg-secondaryWhite md:my-20 md:grid md:w-[600px] md:grid-cols-2"
-  >
-    <Image src={imageMobile} alt="Parfum" loading={"eager"} class="md:hidden" />
-    <Image
-      src={imageDesktop}
-      alt="Parfum"
-      loading={"eager"}
-      class="hidden md:block"
-    />
-    <div class="px-8 py-6">
-      <p
-        class="mb-3 font-montserrat text-xs uppercase tracking-[.35rem] text-secondaryDarkGrayishBlue md:mb-5 md:mt-2"
-      >
-        Perfume
-      </p>
-
-      <h1
-        class="mb-4 font-fraunces text-[2rem] font-semibold leading-none text-secondaryVeryDarkBlue md:mb-5"
-      >
-        Gabrielle Essence Eau De Parfum
-      </h1>
-
-      <p class="mb-7 text-sm text-secondaryDarkGrayishBlue md:leading-6">
-        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-
-      <div class="mb-5 flex items-center md:mb-6">
-        <p class="mr-4 font-fraunces text-3xl text-primaryDarkCyan md:text-4xl">
-          $149.99
-        </p>
+  <main>
+    <section
+      class="mx-auto my-8 w-[360px] overflow-hidden rounded-lg bg-secondaryWhite md:my-20 md:grid md:w-[600px] md:grid-cols-2"
+    >
+      <Image
+        src={imageMobile}
+        alt="Parfum"
+        loading={"eager"}
+        class="md:hidden"
+      />
+      <Image
+        src={imageDesktop}
+        alt="Parfum"
+        loading={"eager"}
+        class="hidden md:block"
+      />
+      <div class="px-8 py-6">
         <p
-          class="text-xs text-secondaryDarkGrayishBlue line-through md:text-sm"
+          class="mb-3 font-montserrat text-xs uppercase tracking-[.35rem] text-secondaryDarkGrayishBlue md:mb-5 md:mt-2"
         >
-          $169.99
+          Perfume
         </p>
-      </div>
-
-      <div
-        class="flex items-center justify-center rounded-md bg-primaryDarkCyan py-[13px] focus-within:bg-secondaryDarkCyan hover:cursor-pointer hover:bg-secondaryDarkCyan"
-      >
-        <Image
-          src={cart}
-          alt="Shoping Cart"
-          class="mr-2 inline"
-          loading="eager"
-        />
-        <button
-          class="block font-montserrat text-sm text-secondaryWhite focus:outline-none"
-          type="submit"><span></span>Add to Cart</button
+        <h1
+          class="mb-4 font-fraunces text-[2rem] font-semibold leading-none text-secondaryVeryDarkBlue md:mb-5"
         >
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="mb-7 text-sm text-secondaryDarkGrayishBlue md:leading-6">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="mb-5 flex items-center md:mb-6">
+          <p
+            class="mr-4 font-fraunces text-3xl text-primaryDarkCyan md:text-4xl"
+          >
+            $149.99
+          </p>
+          <p
+            class="text-xs text-secondaryDarkGrayishBlue line-through md:text-sm"
+          >
+            $169.99
+          </p>
+        </div>
+        <div
+          class="flex items-center justify-center rounded-md bg-primaryDarkCyan py-[13px] focus-within:bg-secondaryDarkCyan hover:cursor-pointer hover:bg-secondaryDarkCyan"
+        >
+          <img src="/icon-cart.svg" alt="Shoping Cart" class="mr-2 inline" />
+          <button
+            class="block font-montserrat text-sm text-secondaryWhite focus:outline-none"
+            type="submit"><span></span>Add to Cart</button
+          >
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </MainLayout>
