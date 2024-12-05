@@ -10,11 +10,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -26,6 +22,7 @@ Users should be able to:
 - See hover and focus states for interactive elements
 
 ### Screenshot
+
 ![product-preview-card](https://github.com/Smart-Ace-Designs/Astro-Product-Preview-Card/assets/132539186/60bc4cae-e620-4566-bede-c7e208d25697)
 
 ### Links
@@ -45,24 +42,7 @@ Users should be able to:
 - Bun
 - Mobile-first workflow
 
-### What I learned
-
-Handling multiple images.
-
-### Continued development
-
-Use a <picture> element to select the image basded on the screen size.
-
-### Useful resources
-
-- [Tailwind CSS Cheat Sheet](https://tailwindcomponents.com/cheatsheet/)
-- [Microsoft Bing Copilot](https://www.bing.com/chat?form=NTPCHB)
-
 ## Author
 
 - Website - [Smart Ace Designs (GitHub)](https://github.com/Smart-Ace-Designs)
 - Frontend Mentor - [@smart-ace-designs](https://www.frontendmentor.io/profile/Smart-Ace-Designs)
-
-## Acknowledgments
-
-[Kevin Powell](https://www.youtube.com/@KevinPowell)
