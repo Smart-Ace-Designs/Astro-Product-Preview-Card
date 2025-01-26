@@ -1,6 +1,6 @@
 ---
-import "@/styles/styles.css";
-import { ClientRouter } from 'astro:transitions';
+import "@/styles/global.css";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
   title?: string;
@@ -18,7 +18,7 @@ const { title = "Astro" } = Astro.props;
     <ClientRouter />
   </head>
   <body
-    class="bg-primaryCream font-montserrat md:grid md:h-screen md:items-center"
+    class="bg-theme-cream font-montserrat md:grid md:h-screen md:items-center"
   >
     <slot />
   </body>
