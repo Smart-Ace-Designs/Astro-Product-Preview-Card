@@ -1,18 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500 700;
-  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+@theme {
+  --color-theme-primary-dark-cyan: hsl(158, 36%, 37%);
+  --color-theme-secondary-dark-cyan: hsl(158, 36%, 18%);
+  --color-theme-cream: hsl(30, 38%, 92%);
+  --color-theme-very-dark-blue: hsl(212, 21%, 14%);
+  --color-theme-dark-grayish-blue: hsl(228, 12%, 48%);
+  --color-theme-white: hsl(0, 0%, 100%);
+
+  --font-montserrat: Montserrat, Sans-Serif;
+  --font-fraunces: Fraunces, Sans-Serif;
 }
 
-@font-face {
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
-    format("truetype");
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500 700;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
+      format("truetype");
+  }
 }
