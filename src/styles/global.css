@@ -20,21 +20,21 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+}
 
-  @font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500 700;
-    src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
-    font-display: swap;
-  }
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500 700;
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: "Fraunces";
-    font-style: normal;
-    font-weight: 700;
-    src: url("/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
-      format("truetype");
-    font-display: swap;
-  }
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
+    format("truetype");
+  font-display: swap;
 }
