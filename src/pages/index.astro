@@ -6,7 +6,10 @@ import imageMobile from "@/assets/image-product-mobile.jpg";
 import imageDesktop from "@/assets/image-product-desktop.jpg";
 ---
 
-<MainLayout title="Frontend Mentor | Product Preview Card">
+<MainLayout
+  title="Frontend Mentor | Product Preview Card"
+  description="A product preview card component challenge from Frontend Mentor"
+>
   <main>
     <section
       class="bg-theme-white mx-auto my-8 w-[360px] overflow-hidden rounded-lg md:my-20 md:grid md:w-[600px] md:grid-cols-2"
@@ -25,12 +28,12 @@ import imageDesktop from "@/assets/image-product-desktop.jpg";
       />
       <div class="px-8 py-6">
         <p
-          class="text-theme-dark-grayish-blue mb-3 font-montserrat text-xs uppercase tracking-[.35rem] md:mb-5 md:mt-2"
+          class="text-theme-dark-grayish-blue font-montserrat mb-3 text-xs tracking-[.35rem] uppercase md:mt-2 md:mb-5"
         >
           Perfume
         </p>
         <h1
-          class="text-theme-very-dark-blue mb-4 font-fraunces text-[2rem] font-semibold leading-none md:mb-5"
+          class="text-theme-very-dark-blue font-fraunces mb-4 text-[2rem] leading-none font-semibold md:mb-5"
         >
           Gabrielle Essence Eau De Parfum
         </h1>
@@ -40,7 +43,7 @@ import imageDesktop from "@/assets/image-product-desktop.jpg";
         </p>
         <div class="mb-5 flex items-center md:mb-6">
           <p
-            class="text-theme-primary-dark-cyan mr-4 font-fraunces text-3xl md:text-4xl"
+            class="text-theme-primary-dark-cyan font-fraunces mr-4 text-3xl md:text-4xl"
           >
             $149.99
           </p>
@@ -55,7 +58,7 @@ import imageDesktop from "@/assets/image-product-desktop.jpg";
         >
           <img src="/icon-cart.svg" alt="Shoping Cart" class="mr-2 inline" />
           <button
-            class="text-theme-white block font-montserrat text-sm focus:outline-hidden"
+            class="text-theme-white font-montserrat block text-sm focus:outline-hidden"
             type="submit"><span></span>Add to Cart</button
           >
         </div>
