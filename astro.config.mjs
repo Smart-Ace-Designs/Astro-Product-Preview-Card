@@ -17,7 +17,6 @@ export default defineConfig({
         cssVariable: "--font-fraunces",
         weights: [400, 600],
         styles: ["normal"],
-        subsets: ["latin"],
       },
       {
         provider: fontProviders.google(),
@@ -25,7 +24,6 @@ export default defineConfig({
         cssVariable: "--font-montserrat",
         weights: [400],
         styles: ["normal"],
-        subsets: ["latin"],
       },
     ],
   },
