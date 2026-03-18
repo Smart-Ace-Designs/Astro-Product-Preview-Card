@@ -16,16 +16,14 @@ const { title = "Astro", description = "An Astro website." } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+    <link rel="icon" sizes="32x32" type="image/png" href="/favicon-32x32.png" />
     <title>{title}</title>
 
     <Font cssVariable="--font-fraunces" preload />
     <Font cssVariable="--font-montserrat" preload />
     <ClientRouter />
   </head>
-  <body
-    class="bg-theme-cream font-montserrat md:grid md:h-screen md:items-center"
-  >
+  <body class="bg-theme-cream font-montserrat md:grid md:h-screen md:items-center">
     <slot />
   </body>
 </html>
